@@ -1,0 +1,11 @@
+{
+  "name": "integrador",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Bruno Leanza",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}
