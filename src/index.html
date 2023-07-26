@@ -1,3 +1,10 @@
+<!-- 
+    TODO
+    cambiar texto del footer
+    fijar el headder
+    darle margenes al video
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +12,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="styles/styles.css"/>
-    <link rel="icon" type="image/x-icon" href="resources/logoGC.ico"/>
+    <link rel="icon" type="image/x-icon" href="resources/img/logoGC.ico"/>
     <script src="https://kit.fontawesome.com/dd0dcbeb38.js" crossorigin="anonymous"></script>
     <title>Proyecto GC</title>
 </head>
-<body>
+<body class="min-vh-100">
     <header>
         <nav class="navbar navbar-expand-lg mx-3">
             <a class="navbar-brand" href="#">
-                <img src="resources/logoGC.png"/>
+                <img src="resources/img/logoGC.png"/>
             </a>
             <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
@@ -46,8 +53,56 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container">
+        <div class="row">
+            <div class="index-presentation d-flex flex-row-reverse align-items-end">
+                <div class="text-center">
+                    <h1 class="green-title">Trabajamos</h1>
+                    <h1>por una</h1>
+                    <h1 class="blue-title">gran causa</h1>
+                </div>
+            </div>
+        </div>
 
+
+        <div class="row description">
+            <p class="col">
+                GC es una organización sin fines de lucro<br>
+                <strong>que trabaja para promover el desarrollo integral de niños, niñas y adolescentes<br>
+                 a través de la educación</strong>,<br>
+                articulando los siguientes tres ejes:
+            </p>
+        </div>
+
+        <div class="row text-center">
+            <div class="col">
+                <img src="/src/resources/img/growth.svg"/>
+                <h4>Crecimiento</h4>
+            </div>
+            
+            <div class="col">
+                <img src="/src/resources/img/knowledge.svg"/>
+                <h4>Conocimiento</h4>
+            </div>
+
+            <div class="col">
+                <img src="/src/resources/img/fellowship.svg"/>
+                <h4>Compañerismo</h4>
+            </div>
+        </div>
+
+        <div class="row video">
+            <div class="col text-center">
+                <iframe 
+                    width="100%" 
+                    height="500px" 
+                    src="https://www.youtube.com/embed/4a1-2oGlvHI" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
     </main>
 
     <footer class="container-fluid">
@@ -68,7 +123,7 @@
                 </strong>
 
                 <a href="#">
-                    <img src="resources/logoGC_slogan.webp"/>
+                    <img src="resources/img/logoGC_slogan.webp"/>
                 </a>
             </div>
 
@@ -102,7 +157,7 @@
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </div>
-    </footer>
     <script src="scripts/footer.js"></script>
+    </footer>
 </body>
 </html>
