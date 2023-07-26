@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 header {
@@ -22,10 +22,13 @@ footer {
   color: white;
   background-color: #3c4146;
 }
-footer strong, footer p {
+footer h3 {
+  font-weight: 700;
+}
+footer p {
   margin: 1.5rem;
-  font-weight: 500;
-  display: block;
+  line-height: 1.5rem;
+  font-weight: 300;
 }
 footer .form-control {
   border-radius: 0;
