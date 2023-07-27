@@ -1,6 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;500&display=swap");
+/*
+    Parte del diseño está basado en el blog de la desarrolladora Una Kravets
+    https://una.im/
+*/
 * {
   font-family: "Inter", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #151c19;
+  color: #fff;
+}
+
+.row {
+  margin: 1rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
 }
 
 header {
@@ -40,12 +60,32 @@ footer .form-text {
   color: #6c757d;
 }
 
+.main-image, .main-image-aboutus {
+  margin: 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.main-image h2, .main-image-aboutus h2 {
+  display: inline;
+  background-color: #70bf44;
+  color: #fff;
+}
+.main-image-aboutus {
+  background-image: url("/src/resources/img/salon-sm.jpg");
+}
+
 .index-presentation {
   height: 550px;
   background: url("/src/resources/img/home-lg.jpg") no-repeat 0 0;
   background-size: cover;
 }
-.index-presentation h1 {
+
+.title, .title-blue, .title-green {
   font-weight: bold;
   font-size: 2.5rem;
   padding-top: 0.5rem;
@@ -54,10 +94,10 @@ footer .form-text {
   color: white;
   width: 500px;
 }
-.index-presentation .green-title {
+.title-green {
   background-color: #679633;
 }
-.index-presentation .blue-title {
+.title-blue {
   background: #0f75bc;
 }
 
@@ -72,6 +112,27 @@ footer .form-text {
 
 .video {
   margin: 2rem;
+}
+
+.our-mission {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 40px;
+  background-image: url("/src/resources/img/salon-sm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  text-align: center;
+  border: 0;
+  background-color: inherit;
+  color: #fff;
+}
+.card .card-title {
+  font-weight: 600;
+  padding: 0.25rem 0;
+  background: #70bf44;
 }
 
 /*# sourceMappingURL=styles.css.map */

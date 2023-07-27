@@ -1,9 +1,31 @@
-//@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;500&display=swap');
+
+/*
+    Parte del diseño está basado en el blog de la desarrolladora Una Kravets
+    https://una.im/
+*/
+
+$green: #70bf44;
+$bg-color: #151c19;
+$text-primary: #fff;
 
 *{
-    //font-family: 'Poppins', sans-serif;
     font-family: 'Inter', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: $bg-color;
+    color: $text-primary;
+}
+
+.row{
+    margin: 1rem 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Playfair Display', serif;
 }
 
 header{
@@ -51,30 +73,54 @@ footer{
     }
 }
 
+.main-image{
+    margin: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+
+    h2{
+        display: inline;
+        background-color: $green;
+        color: $text-primary;
+    }
+
+    &-aboutus{
+        @extend .main-image;
+        background-image: url('/src/resources/img/salon-sm.jpg');
+    }
+
+}
+
 .index-presentation{
     height: 550px;
     background: url("/src/resources/img/home-lg.jpg") no-repeat 0 0;
     background-size: cover;
+}
 
-    h1{
-        font-weight: bold;
-        font-size: 2.5rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        margin: 0.4rem;
-        color: white;
-        width: 500px;
-    }
 
-    .green-title{
+.title{
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0.4rem;
+    color: white;
+    width: 500px;
+
+    &-green{
+        @extend .title;
         background-color: #679633;
-
     }
 
-    .blue-title{
+    &-blue{
+        @extend .title;
         background: #0f75bc;
     }
-
 }
 
 .description{
@@ -88,4 +134,26 @@ footer{
 
 .video{
     margin: 2rem;
+}
+
+.our-mission{
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 40px;
+    background-image: url('/src/resources/img/salon-sm.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card{
+    text-align: center;
+    border: 0;
+    background-color: inherit;
+    color: $text-primary;
+
+    .card-title{
+        font-weight: 600;
+        padding: 0.25rem 0;
+        background: $green;
+    }
 }
