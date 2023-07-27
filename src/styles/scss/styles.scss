@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif:ital,wght@0,100;1,100&family=Playfair+Display:wght@400;500&display=swap');
 
 /*
     Parte del diseño está basado en el blog de la desarrolladora Una Kravets
@@ -7,7 +7,9 @@
 
 $green: #70bf44;
 $bg-color: #151c19;
-$text-primary: #fff;
+$title-color: #fff;
+$text-primary: #d6cecb;
+$quote-bg-color: #464f4e;
 
 *{
     font-family: 'Inter', sans-serif;
@@ -24,8 +26,32 @@ body{
     margin: 1rem 0;
 }
 
+p{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
 h1, h2, h3, h4, h5, h6{
+    color: $title-color;
     font-family: 'Playfair Display', serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+blockquote{
+    text-align: center;
+
+    p{
+        font-style: italic;
+        font-family: 'Noto Serif', serif;
+        font-weight: 100;
+        font-size: 2rem;
+    }
 }
 
 header{
@@ -79,9 +105,8 @@ footer{
     flex-direction: column;
     justify-content: end;
     align-items: start;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
 
     h2{
         display: inline;
@@ -92,6 +117,11 @@ footer{
     &-aboutus{
         @extend .main-image;
         background-image: url('/src/resources/img/salon-sm.jpg');
+    }
+
+    &-project{
+        @extend .main-image;
+        background-image: url('/src/resources/img/project-header-md.jpg');
     }
 
 }
@@ -146,14 +176,31 @@ footer{
 }
 
 .card{
-    text-align: center;
     border: 0;
     background-color: inherit;
     color: $text-primary;
+    align-items: baseline;
 
     .card-title{
         font-weight: 600;
         padding: 0.25rem 0;
-        background: $green;
+    }
+
+    &-index{
+        @extend .card;
+        text-align: center;
+
+        .card-title{
+            background: $green;
+        }
+    }
+
+    &-project{
+        @extend .card;
+
+        p{
+            font-size: 1rem;
+        }
+
     }
 }

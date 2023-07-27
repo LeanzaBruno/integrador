@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif:ital,wght@0,100;1,100&family=Playfair+Display:wght@400;500&display=swap");
 /*
     Parte del diseño está basado en el blog de la desarrolladora Una Kravets
     https://una.im/
@@ -12,15 +12,38 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   background-color: #151c19;
-  color: #fff;
+  color: #d6cecb;
 }
 
 .row {
   margin: 1rem 0;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
+  color: #fff;
   font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+blockquote {
+  text-align: center;
+}
+blockquote p {
+  font-style: italic;
+  font-family: "Noto Serif", serif;
+  font-weight: 100;
+  font-size: 2rem;
 }
 
 header {
@@ -60,23 +83,25 @@ footer .form-text {
   color: #6c757d;
 }
 
-.main-image, .main-image-aboutus {
+.main-image, .main-image-project, .main-image-aboutus {
   margin: 0 0;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: start;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 500px;
 }
-.main-image h2, .main-image-aboutus h2 {
+.main-image h2, .main-image-project h2, .main-image-aboutus h2 {
   display: inline;
   background-color: #70bf44;
-  color: #fff;
+  color: #d6cecb;
 }
 .main-image-aboutus {
   background-image: url("/src/resources/img/salon-sm.jpg");
+}
+.main-image-project {
+  background-image: url("/src/resources/img/project-header-md.jpg");
 }
 
 .index-presentation {
@@ -123,16 +148,24 @@ footer .form-text {
   background-size: cover;
 }
 
-.card {
-  text-align: center;
+.card, .card-project, .card-index {
   border: 0;
   background-color: inherit;
-  color: #fff;
+  color: #d6cecb;
+  align-items: baseline;
 }
-.card .card-title {
+.card .card-title, .card-project .card-title, .card-index .card-title {
   font-weight: 600;
   padding: 0.25rem 0;
+}
+.card-index {
+  text-align: center;
+}
+.card-index .card-title {
   background: #70bf44;
+}
+.card-project p {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
