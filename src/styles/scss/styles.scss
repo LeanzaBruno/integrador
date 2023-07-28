@@ -4,11 +4,13 @@
     Parte del diseño está basado en el blog https://una.im de la desarrolladora Una Kravets
 */
 
-$green: #70bf44;
+$gc-green: #70bf44;
+$gc-blue: #0e74bb;
 $bg-color: #151c19;
 $title-color: #fff;
 $text-primary: #d6cecb;
 $quote-bg-color: #464f4e;
+$bg-header: #3c4146;
 
 *{
     font-family: 'Inter', sans-serif;
@@ -54,24 +56,33 @@ blockquote{
 }
 
 header{
-    background-color: #3c4146;
+    background-color: $bg-header;
     img{
         width: 50px;
         height: 50px;
     }
 
-    .nav-link{
-        color: white;
+    .navbar{
+        justify-content: space-between;
+        margin: 0 1rem 0 1rem;
+    }
 
+    .navbar-nav{
+        align-items:center;
+    }
+
+    .nav-link{
+        font-weight: 600;
+        color: white !important;
+        margin: 0 0.5rem 0 0.5rem;
     }
     
     .nav-link:hover{
-       color: white;
-       background-color: #70be43;
+        background-color: $gc-green;
     }
 
     .active{
-        font-weight: bold;
+       background-color: $gc-blue;
     }
 }
 
@@ -111,7 +122,7 @@ footer{
 
     h2{
         display: inline;
-        background-color: $green;
+        background-color: $gc-green;
         color: $text-primary;
     }
 
@@ -197,7 +208,7 @@ footer{
         text-align: center;
 
         .card-title{
-            background: $green;
+            background: $gc-green;
         }
     }
 
@@ -219,11 +230,11 @@ footer{
     }
 
     .bg-blue{
-        background-color: #0e74bb;
+        background-color: $gc-blue;
     }
 
     .bg-green{
-        background-color: #679633;
+        background-color: $gc-blue;
     }
 
     p{
