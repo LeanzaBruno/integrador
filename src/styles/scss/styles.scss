@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif:ital,wght@0,100;1,100&family=Playfair+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Noto+Serif:ital,wght@0,100;1,100&family=Playfair+Display:wght@400;500&display=swap');
 
 /*
-    Parte del diseño está basado en el blog de la desarrolladora Una Kravets
-    https://una.im/
+    Parte del diseño está basado en el blog https://una.im de la desarrolladora Una Kravets
 */
 
 $green: #70bf44;
@@ -70,6 +69,10 @@ header{
        color: white;
        background-color: #70be43;
     }
+
+    .active{
+        font-weight: bold;
+    }
 }
 
 footer{
@@ -100,13 +103,11 @@ footer{
 }
 
 .main-image{
-    margin: 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: start;
-    background-size: contain;
+    margin: 0 0 2rem 0;
+    background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
 
     h2{
         display: inline;
@@ -124,6 +125,11 @@ footer{
         background-image: url('/src/resources/img/project-header-md.jpg');
     }
 
+
+    &-activities{
+        @extend .main-image;
+        background-image: url('/src/resources/img/salon-sm.jpg');
+    }
 }
 
 .index-presentation{
@@ -202,5 +208,26 @@ footer{
             font-size: 1rem;
         }
 
+    }
+}
+
+.activities{
+    h2{
+        display: inline;
+        margin: 2rem 0 2rem -2rem;
+        padding: 0 2rem;
+    }
+
+    .bg-blue{
+        background-color: #0e74bb;
+    }
+
+    .bg-green{
+        background-color: #679633;
+    }
+
+    p{
+        margin: 2rem 0 2rem 0;
+        font-weight: 200;
     }
 }

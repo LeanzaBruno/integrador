@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="styles/css/styles.css"/>
+    <link rel="icon" type="image/x-icon" href="resources/img/logoGC.ico"/>
+    <script src="https://kit.fontawesome.com/dd0dcbeb38.js" crossorigin="anonymous"></script>
+    <title>Proyecto GC</title>
+</head>
+<body class="activities">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg mx-3">
+            <a class="navbar-brand" href="#">
+                <img src="resources/img/logoGC.png"/>
+            </a>
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link">QUIÉNES SOMOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">PROYECTO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active">ACTIVIDADES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">COLABORAR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">INSCRIPCIONES 2023</a>
+                </li>
+                <li class="nav-item ms-2">
+                    <a href="https://instagram.com/proyecto.gc">
+                        <i class="fa-brands fa-instagram fa-2x">
+                        </i>
+                    </a>
+                </li>
+                <li class="nav-item ms-2">
+                    <a href="https://facebook.com/proyectogc.ong/">
+                        <i class="fa-brands fa-square-facebook fa-2x">
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-image-activities"></div>
+        <div class="container">
+
+            <h2 class="bg-blue">Actividad pedagógica</h2>
+            <p>
+                Creemos que la educación es el medio para que cada persona alcance su máximo potencial. Por eso en GC trabajamos para ayudar a que cada niño, niña y adolescente pueda adquirir herramientas para lograr la alfabetización y comprensión lectora en el área de lengua y el razonamiento a través de las matemáticas.
+                <br><br>
+                Buscamos lograr estos objetivos a través de materiales didácticos diseñados pedagógicamente con estándares de calidad. Además aprenden lenguaje de señas Argentina como un nuevo idioma, buscando la estimulación de la creatividad, la expresión y la inclusión.
+            </p>
+
+            <h2 class="bg-green">Deporte y recreación</h2>
+            <p>
+                El deporte es una de las mejores escuelas de vida y tienen el poder de transformar conductas negativas en positivas.
+                Es el medio por el cual podemos estimular, enseñar y entrenar valores tales como la lealtad y la cooperación, logrando objetivos en equipo y a la vez desarrollando la creatividad, la organización, la responsabilidad y la sana competencia.
+                Por eso en GC cada día practicamos 40 minutos al deporte y la recreación. 
+            </p>
+
+            <h2 class="bg-blue">Alimentación saludable</h2>
+            <p>
+                La alimentación es necesaria, pero mucho más necesario es alimentarse correctamente. La buena nutrición es fundamental para las etapas de desarrollo de los niños, niñas y adolescentes. Por eso en GC reciben una merienda nutritiva., basada en un plan equilibrado para proveer el 30% de las energías necesarias del día. 
+            </p>
+
+            <h2 class="bg-green">Espacio de arte</h2>
+            <p>
+                En GC los niños participan en espacios de arte visuales, donde realizarán talleres de música y teatro. Estos aspectos son implementados para ayudar a los niños a recuperar, a mantener y a aumentar su capacidad creativa, emocional y de memoria.
+                Estas actividades son imprescindibles para el correcto desarrollo sensorial, motor, cognitivo, emocional y cerebral que le van a permitir aprender a aprender. 
+            </p>
+            
+            <h2 class="bg-blue">Reflexiones en valores</h2>
+            <p>
+                Desde GC entendemos que para mejorar la calidad educativa es fundamental trabajar en cooperación con las familias de todos los que reciben nuestros servicios. Es por ello que cada mes trabajamos con padres y niños sobre sobre el valor y la importancia de la contención, la afirmación, el estímulo y el afecto, para así promover juntos el valor de la educación.
+            </p>
+        </div>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="row py-5">
+            <div class="col text-center">
+                <h3>Contactanos</h3>
+
+                <p class="mt-3 mb-0">
+                    Manzoni 1360, González Catán, Buenos Aires, Argentina
+                </p>
+
+                <p>
+                    Tel. (+54) 11 7102 6887
+                </p>
+
+                <p>
+                    info@proyectogc.org
+                </p>
+
+                <a href="#">
+                    <img src="resources/img/logoGC_slogan.webp"/>
+                </a>
+            </div>
+
+            <form class="col needs-validation" novalidate>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                    <label for="name">Nombre</label>
+                    <div class="invalid-tooltip">
+                        Ingrese su nombre
+                    </div>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="mail" class="form-control" id="mail" placeholder="Email" required/>
+                    <label for="mail">Email</label>
+                    <div class="invalid-tooltip">
+                        Ingrese su mail
+                    </div>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <textarea type="email" class="form-control" id="message" maxlength="200" placeholder="" required></textarea>
+                    <label for="message">Contanos en qué podemos ayudarte</label>
+                    <div class="form-text" id="charCounter">
+                        200 caracteres restantes
+                    </div>
+                    <div class="invalid-tooltip">
+                        Ingrese un mensaje
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </footer>
+    <script src="scripts/footer.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
