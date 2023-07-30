@@ -93,17 +93,19 @@ footer .form-text {
   color: #6c757d;
 }
 
-.main-image, .main-image-activities, .main-image-project, .main-image-aboutus {
+.main-image, .main-image-activities, .main-image-project, .main-image-aboutus, .main-image-index {
   margin: 0 0 2rem 0;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
 }
-.main-image h2, .main-image-activities h2, .main-image-project h2, .main-image-aboutus h2 {
-  display: inline;
-  background-color: #70bf44;
-  color: #d6cecb;
+.main-image-index {
+  background-image: url("/src/resources/img/home-lg.jpg");
 }
 .main-image-aboutus {
   background-image: url("/src/resources/img/salon-sm.jpg");
@@ -114,14 +116,8 @@ footer .form-text {
 .main-image-activities {
   background-image: url("/src/resources/img/salon-sm.jpg");
 }
-
-.index-presentation {
-  height: 550px;
-  background: url("/src/resources/img/home-lg.jpg") no-repeat 0 0;
-  background-size: cover;
-}
-
-.title, .title-blue, .title-green {
+.main-image .text, .main-image .text-blue, .main-image .text-white, .main-image .text-green, .main-image-index .text, .main-image-index .text-blue, .main-image-index .text-white, .main-image-index .text-green, .main-image-aboutus .text, .main-image-aboutus .text-blue, .main-image-aboutus .text-white, .main-image-aboutus .text-green, .main-image-project .text, .main-image-project .text-blue, .main-image-project .text-white, .main-image-project .text-green, .main-image-activities .text, .main-image-activities .text-blue, .main-image-activities .text-white, .main-image-activities .text-green {
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
   padding-top: 0.5rem;
@@ -130,23 +126,27 @@ footer .form-text {
   color: white;
   width: 500px;
 }
-.title-green {
-  background-color: #679633;
+.main-image .text-green, .main-image-index .text-green, .main-image-aboutus .text-green, .main-image-project .text-green, .main-image-activities .text-green {
+  background-color: #70bf44;
 }
-.title-blue {
-  background: #0f75bc;
+.main-image .text-white, .main-image-index .text-white, .main-image-aboutus .text-white, .main-image-project .text-white, .main-image-activities .text-white {
+  background-color: #dcddde;
+}
+.main-image .text-blue, .main-image-index .text-blue, .main-image-aboutus .text-blue, .main-image-project .text-blue, .main-image-activities .text-blue {
+  background: #0e74bb;
 }
 
-.description {
+.index .description {
   font-size: 1.25rem;
   text-align: center;
   margin-top: 40px;
   background-image: url("/src/resources/img/gc.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 100px 100px;
+  background-position: left;
 }
-
-.video {
+.index .video {
   margin: 2rem;
 }
 

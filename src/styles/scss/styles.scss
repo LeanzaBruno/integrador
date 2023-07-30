@@ -6,6 +6,7 @@
 
 $gc-green: #70bf44;
 $gc-blue: #0e74bb;
+$gc-white: #dcddde;
 $bg-color: #151c19;
 $title-color: #fff;
 $text-primary: #d6cecb;
@@ -113,17 +114,21 @@ footer{
     }
 }
 
+
 .main-image{
     margin: 0 0 2rem 0;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
 
-    h2{
-        display: inline;
-        background-color: $gc-green;
-        color: $text-primary;
+    &-index{
+        @extend .main-image;
+        background-image: url("/src/resources/img/home-lg.jpg");
     }
 
     &-aboutus{
@@ -141,46 +146,50 @@ footer{
         @extend .main-image;
         background-image: url('/src/resources/img/salon-sm.jpg');
     }
+
+    .text{
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 2.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin: 0.4rem;
+        color: white;
+        width: 500px;
+
+        &-green{
+            @extend .text;
+            background-color: $gc-green;
+        }
+
+        &-white{
+            @extend .text;
+            background-color: $gc-white;
+        }
+
+        &-blue{
+            @extend .text;
+            background: $gc-blue;
+        }
+    }
 }
 
-.index-presentation{
-    height: 550px;
-    background: url("/src/resources/img/home-lg.jpg") no-repeat 0 0;
-    background-size: cover;
-}
 
-
-.title{
-    font-weight: bold;
-    font-size: 2.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    margin: 0.4rem;
-    color: white;
-    width: 500px;
-
-    &-green{
-        @extend .title;
-        background-color: #679633;
+.index{
+    .description{
+        font-size: 1.25rem;
+        text-align: center;
+        margin-top: 40px;
+        background-image: url('/src/resources/img/gc.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100px 100px;
+        background-position: left;
     }
 
-    &-blue{
-        @extend .title;
-        background: #0f75bc;
+    .video{
+        margin: 2rem;
     }
-}
-
-.description{
-    font-size: 1.25rem;
-    text-align: center;
-    margin-top: 40px;
-    background-image: url('/src/resources/img/gc.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.video{
-    margin: 2rem;
 }
 
 .our-mission{
