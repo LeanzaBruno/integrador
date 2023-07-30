@@ -35,7 +35,7 @@ p{
     font-size: 1.25rem;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3{
     color: $title-color;
     font-family: 'Playfair Display', serif;
 }
@@ -240,5 +240,16 @@ footer{
     p{
         margin: 2rem 0 2rem 0;
         font-weight: 200;
+    }
+}
+
+.inscriptions{
+    h1{
+        text-align: center;
+    }
+
+
+    p, .form-label{
+        color: $text-primary;
     }
 }

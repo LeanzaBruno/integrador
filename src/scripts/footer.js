@@ -5,13 +5,14 @@
 })();
 
 (() => {
-    const form = document.querySelector('.needs-validation');
-    form.addEventListener('submit', event => {
-        if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
+    const form = document.querySelectorAll('.needs-validation');
+    form.forEach( f => f.addEventListener('submit', event => {
+        if (!f.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
         }
 
-        form.classList.add('was-validated');
-        }, false);
+        f.classList.add('was-validated');
+        }, false)
+    );
 })();

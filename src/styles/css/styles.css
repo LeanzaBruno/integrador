@@ -26,7 +26,7 @@ p {
   font-size: 1.25rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   color: #fff;
   font-family: "Playfair Display", serif;
 }
@@ -193,6 +193,13 @@ footer .form-text {
 .activities p {
   margin: 2rem 0 2rem 0;
   font-weight: 200;
+}
+
+.inscriptions h1 {
+  text-align: center;
+}
+.inscriptions p, .inscriptions .form-label {
+  color: #d6cecb;
 }
 
 /*# sourceMappingURL=styles.css.map */
