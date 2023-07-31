@@ -191,6 +191,10 @@ footer .form-text {
   margin: 2rem 0 2rem 0;
   font-weight: 200;
 }
+.activities .gallery-img {
+  display: block;
+  width: 100%;
+}
 
 .inscriptions h1 {
   text-align: center;
