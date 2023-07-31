@@ -152,7 +152,8 @@
                     </div>
                 </div>
 
-                <div class="form-floating mb-3">
+
+                <div class="form-floating">
                     <textarea type="email" class="form-control" id="message" maxlength="200" placeholder="" required></textarea>
                     <label for="message">Contanos en qué podemos ayudarte</label>
                     <div class="form-text" id="charCounter">
@@ -163,11 +164,26 @@
                     </div>
                 </div>
 
+                <div class="mb-3">
+                    <p class="mb-1">Me gustaría </p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="participation" id="donate">
+                        <label class="form-check-label" for="donate">Donar</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="participation" id="volunteer">
+                        <label class="form-check-label" for="volunteer">Postularme</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="participation" id="donate">
+                        <label class="form-check-label" for="donate">Ayudar de otra forma</label>
+                    </div>
+                </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </div>
-    </footer>
     <script src="scripts/footer.js"></script>
+    </footer>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
