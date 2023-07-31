@@ -149,13 +149,9 @@ footer{
 
     .text{
         font-family: 'Inter', sans-serif;
-        font-weight: bold;
-        font-size: 2.5rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
         margin: 0.4rem;
         color: white;
-        width: 500px;
 
         &-green{
             @extend .text;
@@ -206,6 +202,7 @@ footer{
     background-color: inherit;
     color: $text-primary;
     align-items: baseline;
+    text-align: center;
 
     .card-title{
         font-weight: 600;

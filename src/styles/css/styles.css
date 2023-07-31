@@ -118,13 +118,9 @@ footer .form-text {
 }
 .main-image .text, .main-image .text-blue, .main-image .text-white, .main-image .text-green, .main-image-index .text, .main-image-index .text-blue, .main-image-index .text-white, .main-image-index .text-green, .main-image-aboutus .text, .main-image-aboutus .text-blue, .main-image-aboutus .text-white, .main-image-aboutus .text-green, .main-image-project .text, .main-image-project .text-blue, .main-image-project .text-white, .main-image-project .text-green, .main-image-activities .text, .main-image-activities .text-blue, .main-image-activities .text-white, .main-image-activities .text-green {
   font-family: "Inter", sans-serif;
-  font-weight: bold;
-  font-size: 2.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   margin: 0.4rem;
   color: white;
-  width: 500px;
 }
 .main-image .text-green, .main-image-index .text-green, .main-image-aboutus .text-green, .main-image-project .text-green, .main-image-activities .text-green {
   background-color: #70bf44;
@@ -164,6 +160,7 @@ footer .form-text {
   background-color: inherit;
   color: #d6cecb;
   align-items: baseline;
+  text-align: center;
 }
 .card .card-title, .card-project .card-title, .card-index .card-title {
   font-weight: 600;
